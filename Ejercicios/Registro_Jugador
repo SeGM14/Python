@@ -1,0 +1,14 @@
+print ("Player Registration")
+#Recabación de informacion
+name = input("What´s your name ")
+age = int(input ("How old are you "))
+playtime = int(input("In a week, how many hours you play "))
+#Comienza el output con la informacion
+print (f"Nice to meet you {name}")
+if age >= 18:
+    print ("You are able to participate")
+else:
+    print ("You´re unable to participate")
+print (f"Your playtime on a year could be {playtime * 52} hours")
+#Mensaje final
+print ("Thanks for your time")         
