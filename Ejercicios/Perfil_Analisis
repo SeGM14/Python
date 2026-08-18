@@ -1,0 +1,22 @@
+print ("Complete the info")
+# Recepción de información
+name = input("What's your name ")
+age = int(input ("How old are you "))
+sleep_hours = int(input("How many hours you sleep at nigth "))
+study_hours = int(input("On a day, how many hours you study "))
+#Preparación de las operaciones
+sleep_week = (7 * sleep_hours)
+study_week = (7 * study_hours)
+free_hours = (168 - sleep_week - study_week)
+sleep_average = (sleep_week / 7)
+# Comienza el output de la info
+print (f"Hello {name}, nice to meet you")
+print (f"Your age is an {type(age)}")
+print (f"Your name is a {type(name)}")
+print (f"You sleep approximately {sleep_week} hours per week")
+print (f"You have an average of {sleep_average} sleep hours per day")
+print (f"The type of your average is {type(sleep_average)}")
+print (f"You study approximately {study_week} hours per week")
+print (f"You have approximately {free_hours} hours remaining in your week")
+# Despedida de la informacion
+print ("Thank you for your info")
